@@ -1,0 +1,21 @@
+{
+  "name": "driveesy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.1"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "description": ""
+}

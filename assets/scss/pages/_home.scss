@@ -1,0 +1,185 @@
+.owl-carousel {
+  .owl-item {
+    img {
+      height: auto;
+    }
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    @media (max-width: 1441px) {
+      bottom: 90px;
+    }
+    @media (max-width: 805px) {
+      bottom: 60px;
+    }
+    @media (max-width: 500px) {
+      bottom: 40px;
+    }
+
+    .owl-dot {
+      height: 10px;
+      width: 10px;
+      background: #FFFFFF;;
+      margin-right: 24px;
+      border-radius: 50%;
+    }
+
+    .owl-dot.active {
+      background: #FF61E6;
+      border: unset;
+    }
+  }
+}
+
+.about {
+  padding-top: 60px;
+  text-align: right;
+  padding-right: 165px;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000000;
+  }
+
+  .about__content {
+    height: 60px;
+    overflow: hidden;
+
+    &.expanded {
+      height: auto;
+    }
+
+    p {
+      font-family: 'Rounded Mplus 1c', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    border: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    padding-right: 0;
+    @media (max-width: 1024px) {
+      margin-left: unset;
+    }
+
+    &:focus, &:focus-visible {
+      outline: none;
+    }
+
+    &:hover {
+      color: #FF61E6;
+      text-decoration: none;
+
+
+      svg path {
+        fill: black;
+      }
+    }
+
+    svg {
+      transition: all 0.3s linear;
+      margin-left: 6px;
+      transform: rotate(0deg);
+    }
+
+    svg.down {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.products {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  width: 100%;
+  padding: 48px 15px 115px 15px;
+  @media (max-width: 769px){
+    justify-content: center;
+    gap: 20px;
+  }
+  .product__item {
+    text-align: center;
+
+    img {
+    }
+
+    .product__item-title {
+      font-family: 'Futura', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .product__item-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .product__item-description {
+        font-family: 'Rounded Mplus 1c', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .product__item-price {
+        font-family: 'Rounded Mplus 1c', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+        margin-left: 215px;
+        @media (max-width: 354px) {
+          margin-left: 180px;
+        }
+      }
+    }
+
+    .add-cart-button {
+      font-family: 'Rounded Mplus 1c', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #000000;
+      padding: 8px 76px 8px 81px;
+    }
+  }
+}
