@@ -13,7 +13,8 @@
 <header>
     <div class="header-menu">
         <img class="open-menu" onclick="openNav()"
-             src="<?php echo get_site_url() ?>/wp-content/themes/shopping-cart-woocommerce-child/assets/images/hamburger.png" alt="">
+             src="<?php echo get_site_url() ?>/wp-content/themes/shopping-cart-woocommerce-child/assets/images/hamburger.png"
+             alt="">
         <div id="myNav" class="overlay">
             <?php wp_nav_menu(['theme_location' => 'init_menu']); ?>
 
