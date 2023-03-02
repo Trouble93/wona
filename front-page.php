@@ -63,4 +63,4 @@ $products = get_posts($args);
         endif; ?>
     </section>
 </main>
-<?php wp_footer() ?>
+<?php get_footer() ?>
