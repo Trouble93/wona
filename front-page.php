@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name:Home page
-*/
+
 get_header();
 $fields = get_fields();
 $slides = $fields['hero_block_slider'];

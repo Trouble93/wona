@@ -15,3 +15,10 @@ function init_menu()
 }
 
 add_action('init', 'init_menu');
+
+
+function mytheme_woocommerce_template_path( $path ) {
+    $path = get_stylesheet_directory() . '/templates' . $path;
+    return $path;
+}
+add_filter( 'woocommerce_template_path', 'mytheme_woocommerce_template_path' );
