@@ -41,6 +41,7 @@ jQuery(document).ready(function ($) {
         dots: true,
         loop: true,
         rtl: true,
+        autoplay:true,
 
     });
 
